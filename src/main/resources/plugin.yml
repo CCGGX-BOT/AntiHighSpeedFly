@@ -1,0 +1,25 @@
+name: AntiHighSpeedFly
+version: 1.1.1
+main: com.antifly.antihighspeedfly.AntiHighSpeedFly
+api-version: '1.21'
+description: 高级反高速飞行外挂检测插件（纯 Paper API，事件级运动学分析）
+author: AntiFly
+website: https://example.com
+
+commands:
+  antifly:
+    description: AntiHighSpeedFly 管理命令
+    usage: /antifly <reload|toggle|info|reset|test>
+    permission: antihighspeedfly.admin
+    aliases: [ ahsf, hsf ]
+
+permissions:
+  antihighspeedfly.bypass:
+    description: 免于高速飞行检测
+    default: false
+  antihighspeedfly.alert:
+    description: 接收疑似高速飞行警报
+    default: op
+  antihighspeedfly.admin:
+    description: 管理本插件
+    default: op
